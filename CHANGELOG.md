@@ -1,3 +1,30 @@
+# [1.44.0](https://github.com/webex/sdk-component-adapter/compare/v1.43.1...v1.44.0) (2021-07-16)
+
+
+### Bug Fixes
+
+* **dropdown-controls:** select initial value ([8fdb304](https://github.com/webex/sdk-component-adapter/commit/8fdb304d86368eb7ed0cd8728f58640405e6bae9))
+* **MeetingSdkAdapter:** stop local sharing stream immediately after clicking the stop share button ([911f450](https://github.com/webex/sdk-component-adapter/commit/911f45007fbaac7d7ab3c23d6925ec42aae982ed))
+
+
+### Features
+
+* **package:** configure winston logger ([9f88804](https://github.com/webex/sdk-component-adapter/commit/9f88804932c893dc450e1e8f2f15f27f46402d4f))
+
+## [1.43.1](https://github.com/webex/sdk-component-adapter/compare/v1.43.0...v1.43.1) (2021-07-16)
+
+
+### Bug Fixes
+
+* **MeetingsSdkAdapter:** handle switch microphone control events in getMeeting() ([a64064d](https://github.com/webex/sdk-component-adapter/commit/a64064dae9339cadfea8538c09b275e4eea987e4))
+
+# [1.43.0](https://github.com/webex/sdk-component-adapter/compare/v1.42.0...v1.43.0) (2021-07-16)
+
+
+### Features
+
+* **MeetingsAdapter:** transform localAudio and localVideo into objects ([55ee723](https://github.com/webex/sdk-component-adapter/commit/55ee723224ff821e06957c4a4b0407ab0d456327))
+
 # [1.42.0](https://github.com/webex/sdk-component-adapter/compare/v1.41.3...v1.42.0) (2021-07-14)
 
 

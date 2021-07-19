@@ -1,27 +1,18 @@
 import {createLogger, format, transports} from 'winston';
 
-const options = {
-  format: format.combine(
-    format.colorize(),
-    format.simple(),
-  ),
-  silent: process.env.NODE_ENV === 'production',
-};
+const activeTransports = [];
 
-const consoleTransport = new transports.Console(options);
-let fileTransport;
-
-const transportOptions = [consoleTransport];
-
-if (typeof window === 'undefined') {
-  fileTransport = new transports.File({
-    filename: 'logger.log',
-  });
-  transportOptions.push(fileTransport);
+if (process.env.NODE_ENV !== 'production') {
+  activeTransports.push(new transports.Console({
+    format: format.combine(
+      format.colorize(),
+      format.simple(),
+    ),
+  }));
 }
 
 const logger = createLogger({
-  transports: transportOptions,
+  transports: activeTransports,
 });
 
 export default logger;
